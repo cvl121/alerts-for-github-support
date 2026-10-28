@@ -9,6 +9,7 @@ your review.
   you here with a diagnostic report already filled in; it never includes
   your token, and repository names and search queries are replaced with
   placeholders.
+- **Website:** <https://cvl121.github.io/alerts-for-github-support/>
 - **Privacy policy:** <https://gist.github.com/cvl121/16aff332897a81a4c38da4d6b2799919>
 
 The extension's source is maintained in a private repository; this one holds
