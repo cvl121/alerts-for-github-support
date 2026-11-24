@@ -1,0 +1,39 @@
+# Source of the uninstall feedback form. It is served from the public support
+# repository, not from this one: publish it there as
+# .github/ISSUE_TEMPLATE/uninstall.yml (see AGENTS.md, "Update note and
+# uninstall page"). The extension's uninstall URL selects it with
+# ?template=uninstall.yml and fills `version` from the manifest.
+name: Uninstall feedback
+description: Tell us why you removed Alerts for GitHub
+title: Uninstall feedback
+labels: [uninstall]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sorry to see you go. One answer below is enough, and it decides what gets fixed next.
+        This is a public issue: please leave out anything private.
+  - type: dropdown
+    id: reason
+    attributes:
+      label: What made you uninstall?
+      options:
+        - I could not get it set up
+        - It asks for too much access
+        - My notifications or pull requests did not show up
+        - Too many or too noisy notifications
+        - A feature I need is missing
+        - I switched to something else
+        - I only wanted to try it
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Filled in by the extension.
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else? (optional)
